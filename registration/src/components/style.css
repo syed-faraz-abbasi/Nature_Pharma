@@ -1,0 +1,145 @@
+  
+ .navbar{
+     background-color: #053d4f;;
+  }
+  .headertop_info h2{
+    color: #fff;
+ 
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Libre Franklin', sans-serif;
+    position: relative;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 10px 0 200px;
+    text-align: center;
+  }
+  .logo{
+    margin: 14px 0 0 40px;
+    width: 50%;
+
+  }
+.design-ul{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 18px;
+    
+}
+.design-li{
+ margin-right: 20px; 
+ margin-top: 20px;
+ font-weight: 500;
+}
+.design-li:hover{
+   color: #02d8a1;
+}
+.logo-content{
+  font-size: 15px;
+  margin-top: 38px;
+  
+  margin-left: 88px!important;
+}
+  
+.logo-content:hover{
+  color: #02d8a1;
+
+
+}
+ .ph{
+  width: 100%;
+  margin-top: 11px;
+ }
+ .h_title{
+  font-size: 45px;
+  
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 900;
+  color: #02d8a1;
+  
+ 
+ }
+ .h_title.tit{
+  text-align: center;
+ }
+ .h_title.tit
+ .h_title span{
+  font-size: 30px;
+  font-weight: normal;
+  display: block;
+  font-family: 'Libre Baskerville', serif;
+  color:#02d8a1;
+  margin: 0 0 -1px 3px;
+ }
+ .h_title small{
+  color: #053d4f;
+  margin-left: 20px;
+ }
+ .photo1{
+  width: 100%;
+  margin-bottom: 10px;
+ 
+   
+  border-radius: 0 286px 286px 2px;
+ 
+ }
+ .fold-1{
+  margin-top: 50px;
+ }
+ .para{
+  line-height: 3;
+ }
+ .fp3{
+  color: #000;
+  max-width: 830px;
+  margin: 0 auto 33px auto;
+  width: 100%;
+  line-height: 41px;
+  text-align: center;
+  font-size: 15px;
+ }
+ .fold-3 span{
+  color: #053d4f;
+ }
+ .fold-3 span:hover{
+  color: #02d8a1;
+ }
+ .multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+      
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+.img-responsive{
+      width: 20%;
+}
