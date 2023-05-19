@@ -1,64 +1,34 @@
 import React from 'react';
-import Carousel from "react-multi-carousel";
-import "semantic-ui-css/semantic.min.css";
-import "react-multi-carousel/lib/styles.css";
-import { Image } from "semantic-ui-react"; 
+ 
+// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import {
     Col, Container, Row, 
  Nav,
  List,
  ListGroupItem
  } from 'reactstrap';
- 
+  
  import userImg from '../components/images/Nature.png';
  import userImgh from '../components/images/ph.jpg';
  import userIm from '../components/images/photo1.jpg';
-  
- const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      paritialVisibilityGutter: 60
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      paritialVisibilityGutter: 50
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      paritialVisibilityGutter: 30
-    }
-  };
-  const images = [
-    "https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1550133730-695473e544be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1550167164-1b67c2be3973?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1550338861-b7cfeaf8ffd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1550223640-23097fc71cb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1550353175-a3611868086b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1550330039-a54e15ed9d33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1549737328-8b9f3252b927?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1549833284-6a7df91c1f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1549985908-597a09ef0a7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1550064824-8f993041ffd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-  ];
-
-function Header({ deviceType }) {
+ import iconimg from '../components/images/icon1.png';
+ import iconim from '../components/images/icon2.png';
+ import iconim2 from '../components/images/icon2.png';
+ import iconimg1 from '../components/images/icon1.png';
+ import btm2_img from '../components/images/btm2_img.png';
+ import icon_add from '../components/images/icon_add.png';
+ import icon_clock from '../components/images/icon_clock.png';
+ import icon_phone from '../components/images/icon_phone.png';
+function Header() {
     return(
-        <>
-        <Nav className='navbar'>
-            <Row>
-            <Col sm={12}>
-             <div className="headertop_info">
+        <div className="container-fluid">
+        
+            <div className="headertop_info">
                 <h2>COVID-19 vaccines (Pfizer, Moderna, and J&amp;J) and COVID -19 tests (RT-PCR and Antigen Self-Test) are now available.</h2>
             </div>
-            </Col>
-            </Row> 
+             
             
-        </Nav>
+        
          <Row>
             <Col md={2} >
             <img src={userImg} className='logo' />
@@ -81,7 +51,12 @@ function Header({ deviceType }) {
          </Row>
          <Row>
             <Col md={12}>
-            <img src={userImgh} className='ph'/>
+            <img src={userImgh} className='pict'/>
+             {/* <div className='pict_content'>
+                <h1>
+                    <span>Compassionate</span><br/><small> CARE THE </small><br/><span>PHARMACEUTICAL WAY </span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p></h1>
+             </div> */}
 
             </Col>
          </Row>
@@ -105,80 +80,91 @@ function Header({ deviceType }) {
             </h1>
             </Col>
          </Row>
-         <Row className='fold-3  '>
+         <Row className='fold-3 fold-5  '>
             <Col>
             <p className='fp3'>The road to better health starts here. Whatever you need help with, we are here to assist you in recovering as soon as possible. <span>[VIEW MORE SERVICES]</span> </p>
             </Col>
          </Row>
-         <Row>
-            <Col >
-              <div class="container">
-                        <h1>Use Bootstrap 3's carousel to show multiple items per slide.</h1>
-                        <div class="row">
-                            <div class="col-md-12">
-                                {/* <div class="carousel slide multi-item-carousel" id="theCarousel">
-                                <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-xs-4"><a href="#1">
-                                    <img src={userIm}  className ='img-responsive'/></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1">
-                                    <img src={userIm}  className ='img-responsive'/></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1">
-                                    <img src={userIm}  className ='img-responsive'/></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1">
-                                    <img src={userIm}  className ='img-responsive'/></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1">
-                                    <img src={userIm}  className ='img-responsive'/></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-xs-4"><a href="#1">
-                                    <img src={userIm}  className ='img-responsive'/></a></div>
-                                </div>
-                                
-          
-                                    <div class="item">
-                                        <div class="col-xs-4"><a href="#1">
-                                        <img src={userIm}   className='img-responsive'/></a></div>
-                                    </div>
-                                    
-                                    
-                                    </div>
-                                    <a className="left carousel-control" href="#theCarousel" data-slide="prev"><i className="glyphicon glyphicon-chevron-left"></i></a>
-                                    <a className="right carousel-control" href="#theCarousel" data-slide="next"><i className="glyphicon glyphicon-chevron-right"></i></a>
-                                </div> */}
-
-<Carousel
-      ssr
-      partialVisbile
-      deviceType={deviceType}
-      itemClass="image-item"
-      responsive={responsive}
-    >
-      {images.slice(0, 5).map(image => {
-        return (
-          <Image
-            draggable={false}
-            style={{ width: "100%", height: "100%" }}
-            src={image}
-          />
-        );
-      })}
-    </Carousel>
-                                </div>
-                            </div>
-                            </div>
+         <Row className='fold_4 fold-5'>
+            <Col md={3}>
+            <img src={iconimg} className='icon1'/>
+            <h1 className='heading_h1'>Pharmacy</h1>
+            <p>Keep up with your <br/>medications through our help.</p>
+             <button className='btn'>CLICK HERE</button>
+            </Col>
+            <Col md={3}>
+            <img src={iconim} className='icon1'/>
+            <h1 className='heading_h1'>LONG-TERM CARE</h1>
+            <p>Effective medications are <br/>offered at cost-effective prices</p>
+            <button className='btn'>CLICK HERE</button>
+            </Col>
+            <Col md={3}>
+            <img src={iconim2} className='icon1'/>
+            <h1 className='heading_h1'>IMMUNIZATIONS</h1>
+            <p>We extend our services to <br/>long-term care facilities.</p>
+            <button className='btn'>CLICK HERE</button>
+            </Col>
+            <Col md={3}>
+            <img src={iconimg1} className='icon1'/>
+            <h1 className='heading_h1'>MEDICATION</h1>
+            <p>Extra protection for yourself <br/>and your family is necessary.</p>
+            <button className='btn'>CLICK HERE</button>
             </Col>
          </Row>
-          
-        </>
+         <Row className='fold-5'>
+            <Col md={6}>
+            <img src={btm2_img} className='photo1'/>
+            </Col>
+            <Col md={6}>
+            <h1 className='h_title'>
+                <span>You’re Important to Us</span><br/>
+                <small>Mission Statements</small>
+            </h1>
+            <p className='para'>We aim to contribute to the health improvement of the residents in our community by offering safe, effective, consistent, and affordable prescriptions, medical equipment, and pharmaceutical services.</p> 
+            <button className='btn'>ABOUT US</button>
+            </Col>
+         </Row>
+         <Row className='fold-5'>
+            <Col md={6}>
+                <div  className='map'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.8611732316526!2d-75.17365608461836!3d39.944494879422926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c63c1adc2739%3A0x9b05374ff4406e4d!2s1735+South+St%2C+Philadelphia%2C+PA+19146%2C+USA!5e0!3m2!1sen!2sph!4v1535509006848"  allowfullscreen=""></iframe>
+
+                </div>
+            </Col >
+              <Col md={6}>
+              <h1 className='h_title'>
+                <span>Get in Touch</span>
+                <small>Contact Information</small>
+              </h1> 
+                <p>Don’t hesitate to reach out to us using the information provided below.</p>
+             
+                <List className='design_map'>
+                  <ListGroupItem className='design-li lm'>   <img src={icon_add} className=' icon_map'/> 1735 South Street<br/><span>Philadelphia, PA 19146</span></ListGroupItem>  
+                  <ListGroupItem className='design-li lm'> <img src={icon_clock} className=' icon_map'/> Phone: 215-735-1200 <br/><span>Fax: 215-735-0455</span><br/> <span>Email: pennmarkrx@gmail.com</span></ListGroupItem>    
+                  <ListGroupItem className='design-li lm'> <img src={icon_phone} className='icon_map '/> Business Hours: <br/>
+                    <span>Monday - Friday: 9:00 AM - 6:00 PM </span><br/>  
+                   <span> Saturday: 9:00 AM - 3:00 PM</span>  <br/>
+                    <span>Sunday: Closed</span></ListGroupItem>    
+                      
+              </List>
+              </Col>
+         </Row>
+          <Row className='footer'>
+            <Col md={8} className='footer_content'>
+            <List className='design-ul foot'>
+                  <ListGroupItem className='design-li'>Home</ListGroupItem>  
+                  <ListGroupItem className='design-li'>About Us</ListGroupItem>    
+                  <ListGroupItem className='design-li'>Services</ListGroupItem>    
+                  <ListGroupItem className='design-li'>Medical Supplies</ListGroupItem>    
+                 <ListGroupItem className='design-li'>Resources</ListGroupItem>    
+                 <ListGroupItem className='design-li'>Contact Us</ListGroupItem>    
+              </List>
+            </Col>
+            <Col md={4}>
+            <img src={userImg} className='logo footer' />   
+            </Col>
+          </Row>        
+        </div>
     )
 }
 export default Header;

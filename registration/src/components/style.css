@@ -1,6 +1,17 @@
   
+ .row>* {
+  padding-right: 0;
+  padding-left: 0;
+ }
+ .fold_1{
+  background-color: #053d4f;
+ }
  .navbar{
      background-color: #053d4f;;
+  }
+  .headertop_info{
+    background-color: #053d4f;
+
   }
   .headertop_info h2{
     color: #fff;
@@ -46,9 +57,17 @@
 
 
 }
- .ph{
+ .pict{
+  position:relative;
+
   width: 100%;
   margin-top: 11px;
+ }
+ .pict_content h1{
+  position: absolute;
+  bottom: 8px;
+  margin: 0 0 0 142px;
+  font-weight: 700;
  }
  .h_title{
   font-size: 45px;
@@ -88,6 +107,7 @@
  }
  .para{
   line-height: 3;
+  margin-left: 15px;
  }
  .fp3{
   color: #000;
@@ -104,42 +124,84 @@
  .fold-3 span:hover{
   color: #02d8a1;
  }
- .multi-item-carousel{
-  .carousel-inner{
-    > .item{
-      transition: 500ms ease-in-out left;
-    }
-    .active{
-      &.left{
-        left:-33%;
-      }
-      &.right{
-        left:33%;
-      }
-    }
-    .next{
-      left: 33%;
-    }
-    .prev{
-      left: -33%;
-    }
-    @media all and (transform-3d), (-webkit-transform-3d) {
-      > .item{
-      
-        transition: 500ms ease-in-out left;
-        transition: 500ms ease-in-out all;
-        backface-visibility: visible;
-        transform: none!important;
-      }
-    }
-  }
-  .carouse-control{
-    &.left, &.right{
-      background-image: none;
-    }
-  }
-}
+  
+ .pict_content span,small{
+ font-size: 20px;
+ }
+ .pict_content p{
+  font-size: 20px;
+ }   
 
 .img-responsive{
       width: 20%;
 }
+.fold_4{
+  padding: 3px 0 39px 127px;
+  
+  margin-left: 65px;
+}
+ 
+ 
+.btn{
+  background-color: #053d4f;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+
+}
+.icon1{
+  margin-left: 10px;
+}
+.heading_h1{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.btn:hover{
+  background-color:#02d8a1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+ .map iframe{
+  width: 70%;
+  margin-left: 50px;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+ }
+ .design-li.lm:hover{
+  color: #000;
+  
+ }
+ .fold-5{
+  margin-top: 20px;
+  
+ }
+ .icon_map{
+  margin-right: 20px;
+  margin-top: 10px;
+  
+ }
+ .design_map span{
+  margin-left: 65px;
+ }
+ .footer_content{
+  background-color: #053d4f;
+  color: #fff;
+ }
+ .design-ul.foot{
+  margin-left: 60px;
+  text-align: center;
+ }
+ .logo.footer{
+  width: 50%;
+  margin-bottom: 50px;
+  padding: 20px;
+   
+ }
+ .footer{
+  margin-top: 80px;
+ }
+ 
