@@ -1,18 +1,19 @@
-
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import RegistrationForm from './components/registrationForm';
-
+import Header from './components/header';
 
 function App() {
   return (
-    <>
-    <div className="App">
-      <Header/>
-      <RegistrationForm/>
-    </div>
-    </>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<RegistrationForm />} />
+          <Route path='/header' element={<Header/>}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
