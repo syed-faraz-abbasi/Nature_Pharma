@@ -23,13 +23,13 @@ function Header() {
    
     return(
       <>
-      {/* <div className='header'>
+      <div className='header'>
          <Container>
          <Row>
             <Col md={2} >
             <img src={userImg} className='logo' />
             </Col>
-            <Col md={6}>
+            {/* <Col md={6}>
               <List className='design-ul'>
                   <ListGroupItem className='design-li'>Home</ListGroupItem>  
                   <ListGroupItem className='design-li'>About Us</ListGroupItem>    
@@ -40,14 +40,14 @@ function Header() {
               </List>
                
            
-            </Col>
-            <Col md={4}>
+            </Col> */}
+            {/* <Col md={4}>
                 <h3>For More Information, Please Call Us:  1236547898 </h3>
-            </Col>
+            </Col> */}
          </Row>
          </Container>
       
-      </div> */}
+      </div>
       
       </>
         
