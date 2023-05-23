@@ -8,8 +8,12 @@ import {
  } from 'reactstrap';
 import 'react-slideshow-image/dist/styles.css';
  
- import userImgh from '../components/images/ph.jpg';
+ import angryimg from '../components/images/angryimg.png';
  import userIm from '../components/images/photo1.jpg';
+ 
+ 
+ import person from '../components/images/person.jpg';
+ 
  
 
 const Home = () => {
@@ -28,16 +32,31 @@ const Home = () => {
                     <Col>
                         <Slide>
                             <div className="slide">
-                                <img src={userImgh}  />                     
+                                    <img   src={angryimg} className='img1'  /> 
+                                    <img src={person} className='img2 img3 img4' /> 
+                                    <h1>Welcome to <br/>Sharda Pharmacy</h1>       
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
+                                    <button className='btn_p'>Read More</button>    
+                                    <button className='btn_b'>Know More</button>   
                             </div>
                             <div className="slide">
                                 
-                            <img src={userImgh}  />   
+                                    <img   src={angryimg} className='img1'  /> 
+                                     <img src={person} className='img2 img3 img4' />  
+                                    <h1>Welcome to <br/>Sharda Pharmacy</h1>       
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>           
+                                    <button className='btn_p'>Read More</button>    
+                                    <button className='btn_b'>Know More</button>   
                                 
                             </div>
                             <div className="slide">
-                            <img src={userImgh}  />   
-                                
+                                    <img   src={angryimg} className='img1'  /> 
+                                     <img src={person} className='img2 img3 img4' /> 
+                                    <h1>Welcome to <br/>Sharda Pharmacy</h1>       
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>   
+                                    <button className='btn_p'>Read More</button>    
+                                    <button className='btn_b'>Know More</button>      
+                            
                             </div>
                         
                         </Slide>
@@ -47,17 +66,15 @@ const Home = () => {
         </div>
         <div className='home'>
             <Container fluid>
-                <Row>
-                <h1>Welcome to Sharda Pharmacy</h1>
+                <Row className='home-cont'>
+                 
                     <Col md={6}>
                     <img src={userIm}  />   
                     </Col>
                     <Col md={6} className='home-content'>
-                          <h2>
-                            Pharmacy
-                          </h2>
-                          <p>You and your loved ones’ health come first. With high-quality medications and supplies provided by skilled and experienced pharmacists, you can guarantee to live a healthy life within your budget.<br/> We look out for everyone in the community as if they are part of our family too.</p>
-                          <a className="btn">Read More</a>
+                         <h1>Welcome to Sharda Pharmacy</h1>
+                          <p>You and your loved ones’ health come first. With high-quality medications and supplies provided by skilled and experienced pharmacists, you can guarantee to live a healthy life within your budget. </p>
+                          <a className='btn'>Read More</a>
                     </Col>
 
                 </Row>

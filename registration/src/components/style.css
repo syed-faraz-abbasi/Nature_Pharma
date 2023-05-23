@@ -7,31 +7,125 @@
        text-align: center;
 }
 .home img{
-  width: 100%;
+  width: 92%;
   padding-top: 20px;
+  height: 84%;
 }
+ 
 .home h1{
-  text-align: center;
-  margin: 20px 20px 20px 20px;
+  font-size: 34px;
+    display: block;
+    font-weight: normal;
+    margin: 0 0 40px 0;
+    color: #002270;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
 }
- .home p{
-  line-height: 3;
- }
+.home h1:after{
+  content: "";
+position: absolute;
+bottom: -10px;
+left: 0;
+height: 2px;
+width: 120px;
+display: block;
+background: #002270;
+}
+.home p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #444;
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+ 
 .home-content{
   margin-top: 50px;
 }
-
-
-
-
-
-
-
-
-.slider img{
-  width: 100%;
+.home-cont{
+  margin-top: 70px;
+}
+.home{
+  overflow: hidden;
 }
 
+
+
+
+
+
+
+.slider .slide .img1{
+  width: 100%;
+    opacity: .6;
+  height: 474px;
+ }
+ 
+ .btn_p{
+  position: absolute;
+  top: 65%;
+  border-radius: 5px 5px 5px 5px;
+  padding: 16px 48px 16px 48px;
+  
+  left: 5%;
+  height: auto;
+  background-color: rgb(212, 25, 25);
+  color: #fff;
+  border: 1px solid  rgb(212, 25, 25);
+ }
+ .btn_p:hover{
+  background-color: #fff;
+  color:rgb(212, 25, 25); 
+  border: 1px solid  rgb(212, 25, 25);
+ }
+ .btn_b{
+  position: absolute;
+  top: 65%;
+  border-radius: 5px 5px 5px 5px;
+    padding: 16px 48px 16px 48px;
+  left: 20%;
+  height:auto;
+  background-color: #fff;
+  color:rgb(212, 25, 25);
+  border: 1px solid rgb(212, 25, 25);
+ }
+  
+.btn_b:hover{
+  background-color:rgb(212, 25, 25);
+  color: #fff;
+
+ }
+  
+ .slider .slide .img4{
+ 
+  left: 68%;
+  position: absolute;
+  top: 58px;
+  border-radius: 1%;
+  height: 353px;
+  
+ }
+
+  
+ 
+.slide{
+  position: relative;
+}
+.slide h1{
+  left: 70px;
+  position: absolute;
+  top: 121px;
+  font-weight: 700;
+  color: rgb(19, 19, 49);
+}
+.slide p{
+  position: absolute;
+  top: 230px;
+  left: 70px;
+  font-weight: 500;
+  color: rgb(19, 19, 49);
+}
 .slider .container-fluid{
   padding: 0;
   overflow: hidden;
@@ -48,28 +142,23 @@
   margin-right: 10px;
 }
 .btn{
-  background-color: #060316;
-  color: #fff;
+  
+   background-color: #8766ff;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #677fc400;
+    border-radius: 5px 5px 5px 5px;
+    padding: 16px 48px 16px 48px;
+    color: #fff;
   font-weight: 500;
+  margin-top: 70px;
 }
 .btn:hover{
-  background-color: #fff;
-  color:#060316; 
-  border: 1px solid #060316;
+  color:  #8766ff;
+    background-color:#fff;
+    border-color:   #8766ff;
+
   
 
 }
-.btn:before {
-  border-color: #c47135;
-  border-left-width: 2px;
-  border-top-width: 2px;
-  left: -5px;
-  top: -5px;}
-
-  .btn:after {
-    border-bottom-width: 2px;
-    border-color: #c47135;
-    border-right-width: 2px;
-    bottom: -5px;
-    right: -5px;
-}
+ 
