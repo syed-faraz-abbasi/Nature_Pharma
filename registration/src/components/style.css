@@ -1,10 +1,11 @@
+
 .container-fluid{
   padding: 0;
 }
 .header .dec{
   text-decoration: none!important;
   color: #000!important;
-
+  
 }
 .header .dec:hover{
   color: #8766ff!important ;
@@ -14,13 +15,28 @@
        font-size: 10px!important;
        text-align: center;
 }
-.home img{
+.slider .default-nav {
+  width: 50px !important; 
+  height: 50px !important;
+   margin: 0 20px;
+}
+.slider .default-nav svg{
+  margin: 0px auto;
+    display: block;
+    width: 16px;
+}
+
+
+.home-about {
+  padding: 70px 0;
+}
+.home-about img{
   width: 92%;
-  padding-top: 20px;
+  padding-top: 0px;
   height: 84%;
 }
  
-.home h1{
+.home-about h1{
   font-size: 34px;
     display: block;
     font-weight: normal;
@@ -29,7 +45,7 @@
     font-family: 'Roboto Slab', serif;
     position: relative;
 }
-.home h1:after{
+.home-about h1:after{
   content: "";
 position: absolute;
 bottom: -10px;
@@ -39,7 +55,7 @@ width: 120px;
 display: block;
 background: #002270;
 }
-.home p{
+.home-about p{
   font-size: 16px;
   line-height: 26px;
   color: #444;
@@ -49,12 +65,12 @@ background: #002270;
 
  
 .home-content{
-  margin-top: 50px;
+   
 }
 .home-cont{
   margin-top: 70px;
 }
-.home{
+.home-about{
   overflow: hidden;
 }
 

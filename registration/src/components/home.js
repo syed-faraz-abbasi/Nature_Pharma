@@ -64,17 +64,19 @@ const Home = () => {
                 </Row>
             </Container>
         </div>
-        <div className='home'>
-            <Container fluid>
-                <Row className='home-cont'>
+        <div className='home-about'>
+            <Container>
+                <Row>
                  
                     <Col md={6}>
                     <img src={userIm}  />   
                     </Col>
-                    <Col md={6} className='home-content'>
+                    <Col md={6} >
+                        <div className='home-content'>
                          <h1>Welcome to Sharda Pharmacy</h1>
                           <p>You and your loved ones’ health come first. With high-quality medications and supplies provided by skilled and experienced pharmacists, you can guarantee to live a healthy life within your budget. </p>
-                          <a className='btn'>Read More</a>
+                          <a className='btn'>Read Mre</a>
+                          </div>  
                     </Col>
 
                 </Row>
