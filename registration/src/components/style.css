@@ -1,6 +1,14 @@
 .container-fluid{
   padding: 0;
 }
+.header .dec{
+  text-decoration: none!important;
+  color: #000!important;
+
+}
+.header .dec:hover{
+  color: #8766ff!important ;
+}
  
 .header h1{
        font-size: 10px!important;
@@ -117,14 +125,14 @@ background: #002270;
   position: absolute;
   top: 121px;
   font-weight: 700;
-  color: rgb(19, 19, 49);
+  color: #fff;
 }
 .slide p{
   position: absolute;
   top: 230px;
   left: 70px;
   font-weight: 500;
-  color: rgb(19, 19, 49);
+ color: #fff;
 }
 .slider .container-fluid{
   padding: 0;
@@ -132,10 +140,13 @@ background: #002270;
 }
 .logo{
   width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .design-ul{
   display: flex;
   justify-content: flex-end;
+  margin-top: 24px;
   
 }
 .design-li{
