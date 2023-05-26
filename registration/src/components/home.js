@@ -216,15 +216,7 @@ const Home = ({ location }) => {
 
 
             </div>
-            <Row>
-                <Col md={6}>
-                    <div className='map'>
-                    <iframe  title='Map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.1673099165023!2d77.48004917468734!3d28.47450759124076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea9cae68659b%3A0xc95b3bd7cf26316e!2sSharda%20Hospital!5e0!3m2!1sen!2sin!4v1685091481221!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  
-                      </div>
-                </Col>
-                <Col md={6}>
-                </Col>
-            </Row>
+            
             
 
 

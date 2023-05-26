@@ -2,8 +2,7 @@
 import Header from './header';
 import Home from './home';
 import Footer from './footer';
-import './style.css'
-import React from 'react';
+ import React from 'react';
 function RegistrationForm() {
     return(
         <>
