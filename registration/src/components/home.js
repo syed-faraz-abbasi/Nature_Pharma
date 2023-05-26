@@ -2,12 +2,14 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import {
     Col, Container, Row,
-    Nav,
-    List,
-    ListGroupItem,
-    Button
+
+
+
+
 } from 'reactstrap';
  
+
+
 import 'react-slideshow-image/dist/styles.css';
 import icon1 from '../components/images/icon1.png';
 import angryimg from '../components/images/angryimg.png';
@@ -19,13 +21,8 @@ import person from '../components/images/person.jpg';
 
 
 
-const Home = () => {
-    const images = [
-        "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-        "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
-        "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
-
-    ];
+const Home = ({ location }) => {
+     
 
     return (
         <>
@@ -36,8 +33,8 @@ const Home = () => {
                             <Slide>
 
                                 <div className="slide">
-                                    <img src={angryimg} className='img1' />
-                                    <img src={person} className='img2 img3 img4' />
+                                    <img src={angryimg} className='img1' alt='img' />
+                                    <img src={person} className='img2 img3 img4' alt='img' />
                                     <h1>Welcome to <br />Sharda Pharmacy</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
                                     <button className='btn_p'>Read More</button>
@@ -45,8 +42,8 @@ const Home = () => {
                                 </div>
                                 <div className="slide">
 
-                                    <img src={angryimg} className='img1' />
-                                    <img src={person} className='img2 img3 img4' />
+                                    <img src={angryimg} className='img1' alt='img' />
+                                    <img src={person} className='img2 img3 img4' alt='img' />
                                     <h1>Welcome to <br />Sharda Pharmacy</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
                                     <button className='btn_p'>Read More</button>
@@ -54,8 +51,8 @@ const Home = () => {
 
                                 </div>
                                 <div className="slide">
-                                    <img src={angryimg} className='img1' />
-                                    <img src={person} className='img2 img3 img4' />
+                                    <img src={angryimg} className='img1' alt='img' />
+                                    <img src={person} className='img2 img3 img4' alt='img' />
                                     <h1>Welcome to <br />Sharda Pharmacy</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
                                     <button className='btn_p'>Read More</button>
@@ -73,13 +70,13 @@ const Home = () => {
                     <Row>
 
                         <Col md={6}>
-                            <img src={userIm} />
+                            <img src={userIm} alt='img' />
                         </Col>
                         <Col md={6} >
                             <div className='home-content'>
                                 <h1>Welcome to Sharda Pharmacy</h1>
                                 <p>You and your loved ones’ health come first. With high-quality medications and supplies provided by skilled and experienced pharmacists, you can guarantee to live a healthy life within your budget. </p>
-                                <a className='btn'>Read More</a>
+                                <a href="https://example.com">Link</a>
                             </div>
                         </Col>
 
@@ -95,127 +92,141 @@ const Home = () => {
                         </div>
                         <div className="centerofexcellence-slider arrowsldier">
 
-                             
+
                             <div className="ce-item">
                                 <div className="global">
-                                        
-                                        <div className="img-wrap">
-                                            <img src={icon1} className=' ' />
-                                        </div>
-                                        <div className="head-wrap">
-                                            <h4>Institute of Dental Sciences</h4>
-                                        </div>
-                                  
+
+                                    <div className="img-wrap">
+                                        <img src={icon1} alt='img' className=' ' />
+                                    </div>
+                                    <div className="head-wrap">
+                                        <h4>Institute of Dental Sciences</h4>
+                                    </div>
+
                                 </div>
                             </div>
                             <div className="ce-item">
                                 <div className="global">
-                                 
-                                        <div className="img-wrap">
-                                            <img src={icon1} className=' ' />
-                                        </div>
-                                        <div className="head-wrap">
-                                            <h4>Institute of Orthopedic & Spine</h4>
-                                        </div>
-                                  
+
+                                    <div className="img-wrap">
+                                        <img src={icon1} className=' ' alt='img' />
+                                    </div>
+                                    <div className="head-wrap">
+                                        <h4>Institute of Orthopedic & Spine</h4>
+                                    </div>
+
                                 </div>
                             </div>
                             <div className="ce-item">
                                 <div className="global">
-                                    
-                                        <div className="img-wrap">
-                                            <img src={icon1} className=' ' />
-                                        </div>
-                                        <div className="head-wrap">
-                                            <h4>Institute of Neuro Sciences</h4>
-                                        </div>
-                                   
+
+                                    <div className="img-wrap">
+                                        <img src={icon1} className=' ' alt='img' />
+                                    </div>
+                                    <div className="head-wrap">
+                                        <h4>Institute of Neuro Sciences</h4>
+                                    </div>
+
                                 </div>
                             </div>
                             <div className="ce-item">
                                 <div className="global">
-                                     
-                                        <div className="img-wrap">
-                                            <img src={icon1} className=' ' />
-                                        </div>
-                                        <div className="head-wrap">
-                                            <h4>Institute of Renal Sciences & Transplant</h4>
-                                        </div>
-                                    
+
+                                    <div className="img-wrap">
+                                        <img src={icon1} className=' ' alt='img' />
+                                    </div>
+                                    <div className="head-wrap">
+                                        <h4>Institute of Renal Sciences & Transplant</h4>
+                                    </div>
+
                                 </div>
                             </div>
                             <div className="ce-item">
                                 <div className="global">
-                                    
-                                        <div className="img-wrap">
-                                            <img src={icon1} className=' ' />
-                                        </div>
-                                        <div className="head-wrap">
-                                            <h4>Institute of Oncology </h4>
-                                        </div>
-                                    
+
+                                    <div className="img-wrap">
+                                        <img src={icon1} className=' ' alt='img' />
+                                    </div>
+                                    <div className="head-wrap">
+                                        <h4>Institute of Oncology </h4>
+                                    </div>
+
                                 </div>
                             </div>
                             <div className="ce-item">
                                 <div className="global">
-                                    
-                                        <div className="img-wrap">
-                                            <img src={icon1} className=' ' />
-                                        </div>
-                                        <div className="head-wrap">
-                                            <h4>Institute of Critical Care</h4>
-                                        </div>
-                                     
+
+                                    <div className="img-wrap">
+                                        <img src={icon1} className=' ' alt='img' />
+                                    </div>
+                                    <div className="head-wrap">
+                                        <h4>Institute of Critical Care</h4>
+                                    </div>
+
                                 </div>
                             </div>
                             <div className="ce-item">
                                 <div className="global">
-                                     
-                                        <div className="img-wrap">
-                                            <img src={icon1} className=' ' />
-                                        </div>
-                                        <div className="head-wrap">
-                                            <h4>Institute of Heart </h4>
-                                        </div>
-                                     
+
+                                    <div className="img-wrap">
+                                        <img src={icon1} className=' ' alt='img' />
+                                    </div>
+                                    <div className="head-wrap">
+                                        <h4>Institute of Heart </h4>
+                                    </div>
+
                                 </div>
                             </div>
-                             
-                             
-                            
-                             
+
+
+
+
 
                         </div>
                         <div className="view-wrap">
-                           
+
 
                         </div>
                     </div>
                 </div>
             </div>
             <div className='home-about fold3'>
+                {/* <Container> */}
+                    <Row>
 
-                <Row>
+                        <Col md={5}>
+                            <img src={testimonial} className='testimonial' alt='img' />
+                        </Col>
+                        <Col md={7} >
+                            <div className='home-test'>
 
-                    <Col md={5}>
-                        <img src={testimonial} className='testimonial' />
-                    </Col>
-                    <Col md={7} >
-                        <div className='home-test'>
+                                <p>“We choose to specialise in Avada <br />
+                                    because it is both functional and <br />
+                                    practical, and  our clients simply love it! It has stood the test of time and <br />
+                                    continues to evolve – an excellent <br />
+                                    solution for our talented design team, <br />
+                                    who continue to push the boundaries.” </p>
 
-                            <p>“We choose to specialise in Avada <br />
-                                because it is both functional and <br />
-                                practical, and  our clients simply love it! It has stood the test of time and <br />
-                                continues to evolve – an excellent <br />
-                                solution for our talented design team, <br />
-                                who continue to push the boundaries.” </p>
+                            </div>
+                        </Col>
 
-                        </div>
-                    </Col>
+                    </Row>
+                {/* </Container> */}
+                
 
-                </Row>
 
             </div>
+            <Row>
+                <Col md={6}>
+                    <div className='map'>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.1673099165023!2d77.48004917468734!3d28.47450759124076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea9cae68659b%3A0xc95b3bd7cf26316e!2sSharda%20Hospital!5e0!3m2!1sen!2sin!4v1685091481221!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  
+                      </div>
+                </Col>
+                <Col md={6}>
+                </Col>
+            </Row>
+            
+
 
         </>
 
