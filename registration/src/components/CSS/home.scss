@@ -340,3 +340,44 @@
    
     
   .centerofexcellence .center-btn {border: 1px solid  #2149b8; color:#fff;} 
+
+.button2 { 
+  background: linear-gradient(180deg, #fff 0%, #fafafa 100%); 
+  border-radius:5px; 
+  border:0; 
+  line-height:50px; 
+  height:50px; 
+  padding:0px 40px; 
+  color:#000; 
+  box-shadow:0px 0px 20px rgb(0 0 0 / 5%); 
+  font-size:16px; 
+  font-weight:normal; 
+  display:inline-block; 
+  &:hover { 
+    background:#555; 
+    color:#ffff; 
+  }
+}
+
+
+.button1 { 
+  background: #d41919; 
+  border-radius:5px; 
+  border:0; 
+  line-height:45px; 
+  height:45px; 
+  padding:0px 30px; 
+  color:#fff; 
+  box-shadow:0px 0px 20px rgb(0 0 0 / 5%); 
+  font-size:15px; 
+  font-weight:normal; 
+  display:inline-block; 
+  border:1px solid #d41919;
+  margin-top: 5px ;
+  &:hover { 
+    background:#fff; 
+    color:#d41919;
+
+  }
+}
+

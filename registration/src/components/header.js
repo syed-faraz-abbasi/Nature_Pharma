@@ -7,7 +7,8 @@ import {
     Col, Container, Row, 
  
  List,
- ListGroupItem
+ ListGroupItem,
+ NavLink
  } from 'reactstrap';
   
  import userImg from '../components/images/Nature.png';
@@ -16,34 +17,62 @@ function Header() {
    
     return(
       <>
-      <div className='header '>
-         <Container>
-         <Row>
-            <Col md={2} >
-            <img src={userImg} className='logo' />
-            </Col>
-            <Col md={6}>
-              <Nav>
-              <List className='design-ul'>
-                  <ListGroupItem className='design-li'><Link className='dec'>Home</Link></ListGroupItem>  
-                  <ListGroupItem className='design-li'><Link  className='dec'>About Us</Link></ListGroupItem>    
-                  <ListGroupItem className='design-li'><Link className='dec' >Services</Link></ListGroupItem>    
-                  <ListGroupItem className='design-li'><Link className='dec'>Medical Supplies</Link></ListGroupItem>    
-                 <ListGroupItem className='design-li'><Link className='dec'>Resources</Link></ListGroupItem>    
-                 <ListGroupItem className='design-li'><Link className='dec'>Contact Us</Link></ListGroupItem>    
-              </List>
-              </Nav>
-            
-               
-           
-            </Col>
-            <Col md={4}>
-                {/* <h3>For More Information, Please Call Us:  1236547898 </h3> */}
-            </Col>
-         </Row>
-         </Container>
+  <section id="header" className="header">
+  	<Container fluid>
+    	<Row>
+        <Col md={3}>
+                  <div className="logo">
+                      <a href="#">
+                          <img src={userImg} className="logo-w" />
+                       </a> 
+                  </div>
+        </Col>
+              
+        <Col md={6}>
+          <div className="nav">
+                  
+  
+                  
+                    <nav className="navbar navbar-expand-lg">
+                          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse  " id="navbarNav">
+                          <ul className="navbar-nav">
+                                  <li className="active"><a href="#">Home</a></li>
+                                <li><a href="#About"> About </a></li>  
+                                  <li><a href="#events"> Events </a></li>  
+                                
+                                <li className="parent-menu">Downloads <i className="fa fa-angle-down" aria-hidden="true"></i>
+                                        
+                                        <ul className="dropdowns hide">
+                                            <li><a href="#">Curriculum Vitae</a></li>
+                                            <li><a href="#">Eligibility Certificate</a></li>
+                                            <li><a href="#">Event Rules and Regulations</a></li>
+                                            <li><a href="#">CheckList</a></li>
+                                            <li><a href="#">Event Brochure</a></li>
+                                      </ul>
+
+                                    </li>
+                                
+                                <li><a href="#"> Result</a></li>
+                                <li><a href="#Contact"> Contact Us</a></li>
+                              
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+        </Col>
       
-      </div>
+        <Col md={3}>
+          <div className="header-contant">
+            <NavLink href="#" className="button1">Apply Now </NavLink> 
+          </div>
+        </Col>
+              
+      </Row>
+    </Container>
+  </section>
       
       </>
         

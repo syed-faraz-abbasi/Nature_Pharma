@@ -1,13 +1,44 @@
-.header .dec{
-    text-decoration: none!important;
-    color: #000!important;
-    
+
+.header {   
+  padding:15px 20px; 
+  position:sticky; 
+  width: 100%; 
+  top: 0; 
+  left: 0;   
+  z-index:9; 
+  transition:ease all 0.3s; 
+  background: #fff;
+  z-index: 11;
+  top:0; 
+  .logo { 
+    float:left; 
+    width:100%;  
+    padding:0px 0 0 0px; 
+    img {
+      height:60px;   
+      margin:0px 15px 0 0; 
+      float:left;  
+    } 
   }
-  .header .dec:hover{
-    color: #8766ff!important ;
+  .header-contant { 
+    font-size:14px; 
+    padding:6px 0 0 0; 
+    text-align:right;   
   }
-   
-  .header h1{
-         font-size: 10px!important;
-         text-align: center;
-  }
+}
+ 
+
+ 
+
+
+.nav { padding:0px 0px 0 0px ; display:block; margin:0px auto; }
+.nav ul { line-height:none; margin:0; padding:0; }
+.nav ul li {float:left;position:relative;margin:0px 0;font-size: 15px;padding:10px 15px;color:#fff;cursor: pointer; font-weight: 500;}
+.nav ul li i { color:#fff; }
+.nav ul li a { font-size:15px;  color:#fff; display:block; text-transform:capitalize; font-weight:500; }
+.nav ul .dropdowns { display:none; position:absolute; top:40px; left:20px; padding:10px; width:280px; z-index:99; background:#fff; border-top:1px solid #ddd; box-shadow:0 0 5px #eee; }
+.nav ul .dropdown-mandis { display:none; position:absolute; top:40px; left:0px; padding:10px; width:450px; z-index:99; background:#fff; border-top:1px solid #ddd; box-shadow:0 0 5px #eee; }
+.nav ul .dropdowns li {display:block;margin:0;float:none;padding: 0;}
+.nav ul .dropdowns li a { display:block; padding:8px !important; font-size:14px; }
+.nav ul li:hover {  color:#ccc;  }
+.nav ul li a:hover { color:#ccc;  }
