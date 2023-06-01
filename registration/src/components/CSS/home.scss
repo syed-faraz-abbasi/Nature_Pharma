@@ -1,8 +1,58 @@
 
-.container-fluid{
+.container-fluid {
     padding: 0;
   }
- 
+.slider {
+  background-image: url(../images/banner-bg.jpeg);
+  background-size: cover;
+  .slidein {
+    position: relative;
+    padding: 100px 50px;
+    h1 {
+       
+      font-weight: 700;
+      color: #fff;
+    }
+    p {
+      
+      font-weight: 500;
+      color: #fff;
+    }
+    .img4{
+      border-radius: 1%;
+      height: 353px;
+      display: block;
+      margin: 0px auto;
+    }
+    .btn_p{
+      border-radius: 5px 5px 5px 5px;
+      padding: 16px 48px 16px 48px;
+      height: auto;
+      background-color: rgb(212, 25, 25);
+      color: #fff;
+      border: 1px solid  rgb(212, 25, 25);
+      &:hover{
+        background-color: #fff;
+        color:rgb(212, 25, 25); 
+        border: 1px solid  rgb(212, 25, 25);
+       }
+    }
+    .btn_b{
+      border-radius: 5px 5px 5px 5px;
+      padding: 16px 48px 16px 48px;
+      left: 20%;
+      height:auto;
+      background-color: #fff;
+      color:rgb(212, 25, 25);
+      border: 1px solid rgb(212, 25, 25);
+      &:hover{
+        background-color:rgb(212, 25, 25);
+        color: #fff;
+      }
+    }
+  } 
+}
+  
   .slider .default-nav {
     width: 50px !important; 
     height: 50px !important;
@@ -89,71 +139,7 @@
     height: 474px;
    }
    
-   .btn_p{
-    position: absolute;
-    top: 65%;
-    border-radius: 5px 5px 5px 5px;
-    padding: 16px 48px 16px 48px;
-    
-    left: 5%;
-    height: auto;
-    background-color: rgb(212, 25, 25);
-    color: #fff;
-    border: 1px solid  rgb(212, 25, 25);
-   }
-   .btn_p:hover{
-    background-color: #fff;
-    color:rgb(212, 25, 25); 
-    border: 1px solid  rgb(212, 25, 25);
-   }
-   .btn_b{
-    position: absolute;
-    top: 65%;
-    border-radius: 5px 5px 5px 5px;
-      padding: 16px 48px 16px 48px;
-    left: 20%;
-    height:auto;
-    background-color: #fff;
-    color:rgb(212, 25, 25);
-    border: 1px solid rgb(212, 25, 25);
-   }
-    
-  .btn_b:hover{
-    background-color:rgb(212, 25, 25);
-    color: #fff;
-  
-   }
-    
-   .slider .slide .img4{
-   
-    left: 68%;
-    position: absolute;
-    top: 58px;
-    border-radius: 1%;
-    height: 353px;
-    
-   }
-  
-    
-   
-  .slide{
-    position: relative;
-    
-  }
-  .slide h1{
-    left: 70px;
-    position: absolute;
-    top: 121px;
-    font-weight: 700;
-    color: #fff;
-  }
-  .slide p{
-    position: absolute;
-    top: 230px;
-    left: 70px;
-    font-weight: 500;
-   color: #fff;
-  }
+ 
   .slider .container-fluid{
     padding: 0;
     overflow: hidden;

@@ -38,27 +38,14 @@ function Header() {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse  " id="navbarNav">
-                          <ul className="navbar-nav">
-                                  <li className="active"><a href="#">Home</a></li>
-                                <li><a href="#About"> About </a></li>  
-                                  <li><a href="#events"> Events </a></li>  
-                                
-                                <li className="parent-menu">Downloads <i className="fa fa-angle-down" aria-hidden="true"></i>
-                                        
-                                        <ul className="dropdowns hide">
-                                            <li><a href="#">Curriculum Vitae</a></li>
-                                            <li><a href="#">Eligibility Certificate</a></li>
-                                            <li><a href="#">Event Rules and Regulations</a></li>
-                                            <li><a href="#">CheckList</a></li>
-                                            <li><a href="#">Event Brochure</a></li>
-                                      </ul>
-
-                                    </li>
-                                
-                                <li><a href="#"> Result</a></li>
-                                <li><a href="#Contact"> Contact Us</a></li>
+                          <List className="navbar-nav">
+                                  <li className="active"><NavLink href="#">Home</NavLink></li>
+                                  <li><NavLink href="#"> About </NavLink></li>  
+                                  <li><NavLink href="#"> Events </NavLink></li>  
+                                  <li><NavLink href="#"> Result </NavLink></li>
+                                  <li><NavLink href="#"> Contact Us </NavLink></li>
                               
-                          </ul>
+                          </List>
                         </div>
                     </nav>
                 </div>

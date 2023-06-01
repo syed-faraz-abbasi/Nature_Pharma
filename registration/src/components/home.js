@@ -32,32 +32,51 @@ const Home = ({ location }) => {
                         <Col>
                             <Slide>
 
-                                <div className="slide">
-                                    <img src={angryimg} className='img1' alt='img' />
-                                    <img src={person} className='img2 img3 img4' alt='img' />
-                                    <h1>Welcome to <br />Sharda Pharmacy</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
-                                    <button className='btn_p'>Read More</button>
-                                    <button className='btn_b'>Know More</button>
+                                <div className="slidein">
+                                    <Container>
+                                    <Row>
+                                        <Col md={6}>
+                                            <h1>Welcome to <br />Sharda Pharmacy</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
+                                            <button className='btn_p'>Read More</button>
+                                            <button className='btn_b'>Know More</button>
+                                        </Col>
+                                        <Col md={6}>
+                                            <img src={person} className='img4' alt='img' />
+                                        </Col>
+                                    </Row>
+                                    </Container>
                                 </div>
-                                <div className="slide">
-
-                                    <img src={angryimg} className='img1' alt='img' />
-                                    <img src={person} className='img2 img3 img4' alt='img' />
-                                    <h1>Welcome to <br />Sharda Pharmacy</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
-                                    <button className='btn_p'>Read More</button>
-                                    <button className='btn_b'>Know More</button>
+                                <div className="slidein">
+                                    <Container>
+                                    <Row>
+                                        <Col md={6}>
+                                            <h1>Welcome to <br />Sharda Pharmacy</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
+                                            <button className='btn_p'>Read More</button>
+                                            <button className='btn_b'>Know More</button>
+                                        </Col>
+                                        <Col md={6}>
+                                            <img src={person} className='img4' alt='img' />
+                                        </Col>
+                                    </Row>
+                                    </Container>
 
                                 </div>
-                                <div className="slide">
-                                    <img src={angryimg} className='img1' alt='img' />
-                                    <img src={person} className='img2 img3 img4' alt='img' />
-                                    <h1>Welcome to <br />Sharda Pharmacy</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
-                                    <button className='btn_p'>Read More</button>
-                                    <button className='btn_b'>Know More</button>
-
+                                <div className="slidein">
+                                    <Container>
+                                    <Row>
+                                        <Col md={6}>
+                                            <h1>Welcome to <br />Sharda Pharmacy</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Mauris laoreet ante quis faucibus commodo. Aenean pharetra arcu a augue euismod,</p>
+                                            <button className='btn_p'>Read More</button>
+                                            <button className='btn_b'>Know More</button>
+                                        </Col>
+                                        <Col md={6}>
+                                            <img src={person} className='img4' alt='img' />
+                                        </Col>
+                                    </Row>
+                                    </Container>
                                 </div>
 
                             </Slide>
