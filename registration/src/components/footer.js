@@ -74,7 +74,7 @@ function Footer() {
       <Col md={6}>
       <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14028.669862661634!2d77.4826241!3d28.4745029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea9cae68659b%3A0xc95b3bd7cf26316e!2sSharda%20Hospital!5e0!3m2!1sen!2sin!4v1685507289065!5m2!1sen!2sin"
-              width="600"
+              width="100%"
               height="400"
               frameBorder="0"
               style={{ border: 0 }}
