@@ -1,4 +1,4 @@
-
+ 
 .header {   
   padding:15px 20px; 
   position:sticky; 
@@ -42,3 +42,53 @@
 .nav ul .dropdowns li a { display:block; padding:8px !important; font-size:14px; }
 .nav ul li:hover {  color:#ccc;  }
 .nav ul li a:hover { color:#ccc;  }
+  .header{
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  transition: ease all 0.3s;
+  top: 0;
+  background-color: #fff;
+ }
+ .header .logo {
+  float: left;
+  width: 50%;
+  padding: 5px 0 0 0px;
+}
+.header .logo img {
+  height: 40px;
+  margin: 5px 15px 0 0;
+  float: left;
+}
+.design-ul{
+  padding: 0px 0px 0 0px;
+    display: block;
+    margin: 0px auto;
+
+}
+.design-ul ul{
+  line-height: none;
+  margin: 0;
+  padding: 0;
+color: #000;
+}
+
+
+.design-ul ul li {
+  float: left;
+  position: relative;
+  margin: 0px 0;
+  font-size: 15px;
+  padding: 10px 15px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.dec{
+  color: #000;
+  text-decoration: none;
+}
+ 

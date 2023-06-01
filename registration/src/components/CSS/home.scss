@@ -67,9 +67,7 @@
     height: 100%;
   }
    
-  .home-content{
-     
-  }
+ 
   .home-cont{
     margin-top: 70px;
   }
@@ -133,11 +131,23 @@
     height: 353px;
     
    }
-  
+  .buttonnew{
+    color: #fff;
+    float: right;
+    border: 2px solid #fff;
+    margin: 13px 0px 0 0;
     
+    border-radius: 14px;
+    padding: 10px 30px;
+    transition: ease all 0.3s;
+    text-decoration: none;
+    background-color: #000;
+  }
+  
    
   .slide{
     position: relative;
+    top: 20px;
     
   }
   .slide h1{
@@ -340,7 +350,7 @@
    
     
   .centerofexcellence .center-btn {border: 1px solid  #2149b8; color:#fff;} 
-
+ 
 .button2 { 
   background: linear-gradient(180deg, #fff 0%, #fafafa 100%); 
   border-radius:5px; 
@@ -381,3 +391,56 @@
   }
 }
 
+   .why-sharda {
+    display: flex;
+    overflow: hidden;
+}
+ 
+.why-sharda .image img {
+  width: 104%;
+  height: 508px;
+  object-fit: cover;
+}
+.why-sharda .sharda-conts {
+  
+  background: #f2f7ff;
+  padding: 100px;
+}
+.why-sharda .sharda-conts h2 {
+  display: block;
+  text-align: left;
+  font-size: 28px;
+  padding: 0 0 10px 0;
+}
+.why-sharda .sharda-conts p {
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  padding: 0 0px 0px 0px;
+  color: #222;
+  margin: 0;
+}
+.why-sharda .sharda-conts ul {
+  padding: 20px 0 0 0;
+}
+.why-sharda .sharda-conts li {
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  padding: 0 0px 10px 20px;
+  color: #222;
+  margin: 0;
+  position: relative;
+}
+.why-sharda .sharda-conts li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  background: #3498db;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  display: block;
+}
+ 

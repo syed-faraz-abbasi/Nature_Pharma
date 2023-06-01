@@ -4,6 +4,7 @@
     "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^2.7.4",
     "react-google-maps": "^9.4.5",
+    "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.2"
   }
 }

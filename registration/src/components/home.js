@@ -14,8 +14,7 @@ import 'react-slideshow-image/dist/styles.css';
 import icon1 from '../components/images/icon1.png';
 import angryimg from '../components/images/angryimg.png';
 import userIm from '../components/images/Landing-Page.png';
-import testimonial from '../components/images/testimonial.jpg';
-
+import photo1 from '../components/images/photo1.jpg';
 
 import person from '../components/images/person.jpg';
 
@@ -29,7 +28,7 @@ const Home = ({ location }) => {
             <div className='slider'>
                 <Container fluid>
                     <Row>
-                        <Col>
+                        <Col >
                             <Slide>
 
                                 <div className="slide">
@@ -76,7 +75,7 @@ const Home = ({ location }) => {
                             <div className='home-content'>
                                 <h1>Welcome to Sharda Pharmacy</h1>
                                 <p>You and your loved ones’ health come first. With high-quality medications and supplies provided by skilled and experienced pharmacists, you can guarantee to live a healthy life within your budget. </p>
-                                <a href="https://example.com">Link</a>
+                                <a className='btn' href="https://example.com">Read</a>
                             </div>
                         </Col>
 
@@ -91,9 +90,8 @@ const Home = ({ location }) => {
                             <h3 className="text-center pb-3">Services We Offer</h3>
                         </div>
                         <div className="centerofexcellence-slider arrowsldier">
-
-
-                            <div className="ce-item">
+                        <Col md={3}>
+                        <div className="ce-item">
                                 <div className="global">
 
                                     <div className="img-wrap">
@@ -105,79 +103,53 @@ const Home = ({ location }) => {
 
                                 </div>
                             </div>
-                            <div className="ce-item">
+                        </Col>
+                        <Col md={3}>
+                        <div className="ce-item">
                                 <div className="global">
 
                                     <div className="img-wrap">
-                                        <img src={icon1} className=' ' alt='img' />
+                                        <img src={icon1} alt='img' className=' ' />
                                     </div>
                                     <div className="head-wrap">
-                                        <h4>Institute of Orthopedic & Spine</h4>
+                                        <h4>Institute of Dental Sciences</h4>
                                     </div>
 
                                 </div>
                             </div>
-                            <div className="ce-item">
+                        </Col>
+                        <Col md={3}>
+                        <div className="ce-item">
                                 <div className="global">
 
                                     <div className="img-wrap">
-                                        <img src={icon1} className=' ' alt='img' />
+                                        <img src={icon1} alt='img' className=' ' />
                                     </div>
                                     <div className="head-wrap">
-                                        <h4>Institute of Neuro Sciences</h4>
+                                        <h4>Institute of Dental Sciences</h4>
                                     </div>
 
                                 </div>
                             </div>
-                            <div className="ce-item">
+                        </Col>
+                        <Col md={3}>
+                        <div className="ce-item">
                                 <div className="global">
 
                                     <div className="img-wrap">
-                                        <img src={icon1} className=' ' alt='img' />
+                                        <img src={icon1} alt='img' className=' ' />
                                     </div>
                                     <div className="head-wrap">
-                                        <h4>Institute of Renal Sciences & Transplant</h4>
+                                        <h4>Institute of Dental Sciences</h4>
                                     </div>
 
                                 </div>
                             </div>
-                            <div className="ce-item">
-                                <div className="global">
+                        </Col>
 
-                                    <div className="img-wrap">
-                                        <img src={icon1} className=' ' alt='img' />
-                                    </div>
-                                    <div className="head-wrap">
-                                        <h4>Institute of Oncology </h4>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div className="ce-item">
-                                <div className="global">
-
-                                    <div className="img-wrap">
-                                        <img src={icon1} className=' ' alt='img' />
-                                    </div>
-                                    <div className="head-wrap">
-                                        <h4>Institute of Critical Care</h4>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div className="ce-item">
-                                <div className="global">
-
-                                    <div className="img-wrap">
-                                        <img src={icon1} className=' ' alt='img' />
-                                    </div>
-                                    <div className="head-wrap">
-                                        <h4>Institute of Heart </h4>
-                                    </div>
-
-                                </div>
-                            </div>
-
+                            
+                            
+                            
 
 
 
@@ -190,32 +162,35 @@ const Home = ({ location }) => {
                     </div>
                 </div>
             </div>
-            <div className='home-about fold3'>
-                {/* <Container> */}
-                    <Row>
-
-                        <Col md={5}>
-                            <img src={testimonial} className='testimonial' alt='img' />
-                        </Col>
-                        <Col md={7} >
-                            <div className='home-test'>
-
-                                <p>“We choose to specialise in Avada <br />
-                                    because it is both functional and <br />
-                                    practical, and  our clients simply love it! It has stood the test of time and <br />
-                                    continues to evolve – an excellent <br />
-                                    solution for our talented design team, <br />
-                                    who continue to push the boundaries.” </p>
-
-                            </div>
-                        </Col>
-
-                    </Row>
-                {/* </Container> */}
-                
 
 
+    <div className="why-sharda">
+        <Row>
+            <Col md={6}>
+            <div className="image">
+          
+             <img src={photo1}   alt='img' />
             </div>
+            </Col>
+            <Col md={6}>
+            <div className="sharda-conts">
+                <h2>Where can I get some??</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <ul>
+                    <li>Lorem Ipsum is simply dummy text of the printing</li>
+                    <li>Lorem Ipsum is simply dummy text of the printing</li>
+                    <li>Lorem Ipsum is simply dummy text of the printing</li>
+                    <li>Lorem Ipsum is simply dummy text of the printing</li>
+                    
+                     
+                </ul>
+            </div>
+            </Col>
+        </Row>  
+        
+      
+	</div>
+   
             
             
 

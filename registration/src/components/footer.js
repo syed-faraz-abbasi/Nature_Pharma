@@ -1,14 +1,19 @@
 import React from 'react';
  
+ 
+
 // import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import {
-    Col, Container, Row, List, NavLink 
+     Col, Container, Row, List, NavLink 
  } from 'reactstrap';
   
  import userImg from '../components/images/Nature.png';
  import call_icon from '../components/images/call_icon.png';
  import mail_icon from '../components/images/mail_icon.png';
  import location_icon from '../components/images/location_icon.png';
+ import mail from '../components/images/mail.png';
+ 
+import logo21 from '../components/images/logo21.png';
 
 
 import { FaFacebookF,FaInstagram,FaLinkedinIn,FaYoutube } from "react-icons/fa";
@@ -18,8 +23,8 @@ function Footer() {
 
    
     return(
-      <>
-<section className="contantinfo-main">
+      <div>
+<div className="contantinfo-main">
   <Container>
     <Row>
       <Col md={8}>
@@ -87,9 +92,9 @@ function Footer() {
     </Row>
     </div>
   </Container>
-</section>
+</div>
 
-<section className="copyright">
+<div className="copyright">
   <Container>
     <Row>
       <Col md={4}>
@@ -115,10 +120,8 @@ function Footer() {
       </Col>
     </Row>
   </Container>
-</section>
-      
-      </>
-        
-    )
-}
+</div>
+</div>
+ );
+ }
 export default Footer;
