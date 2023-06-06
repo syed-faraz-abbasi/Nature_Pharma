@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
  
+import { Link } from 'react-router-dom';
 // import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import {
     Col, Container, Row, 
  
  List,
- ListGroupItem,
+ 
  NavLink
  } from 'reactstrap';
   
@@ -39,13 +38,14 @@ function Header() {
                         </button>
                         <div className="collapse navbar-collapse  " id="navbarNav">
                           <List className="navbar-nav">
-                                  <li className="active"><NavLink href="#">Home</NavLink></li>
-                                  <li><NavLink href="#"> About </NavLink></li>  
-                                  <li><NavLink href="#"> Events </NavLink></li>  
-                                  <li><NavLink href="#"> Result </NavLink></li>
-                                  <li><NavLink href="#"> Contact Us </NavLink></li>
+                                  <li className="active"><NavLink href="/">Home</NavLink></li>
+                                  <li><NavLink href="/about">About</NavLink></li>  
+                                  <li><NavLink href="/events"> Events </NavLink></li>  
+                                  <li><NavLink href="/result"> Result </NavLink></li>
+                                  <li><NavLink href="/contact"> Contact Us </NavLink></li>
                               
                           </List>
+
                         </div>
                     </nav>
                 </div>
