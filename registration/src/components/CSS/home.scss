@@ -5,6 +5,13 @@
 .slider {
   background-image: url(../images/banner-bg.jpeg);
   background-size: cover;
+  &.slider-in{
+    padding: 100px 0;
+    text-align: center;
+    H1 {
+      color: #FFF;
+    }
+  }
   .slidein {
     position: relative;
     padding: 30px 50px 90px 50px;
@@ -267,6 +274,13 @@
     }
   }
 }
+
+.coming-tet { 
+  text-align: center;
+  h1 {
+    font-size: 40px;
+  }
+ }
 
    
    
