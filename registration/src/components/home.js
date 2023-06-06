@@ -20,7 +20,8 @@ import person from '../components/images/person.jpg';
 
 import slidebg from '../components/images/2.png';
 
-
+import Header from './header';
+import Footer from './footer';
 
 
 const Home = ({ location }) => {
@@ -28,6 +29,7 @@ const Home = ({ location }) => {
 
     return (
         <>
+        <Header/>
             <div className='slider'>
                 <Container fluid>
                     <Row>
@@ -200,7 +202,7 @@ Curabitur nec nisl in sem scelerisque blandit id nec diam. Suspendisse placerat 
             
             
 
-
+        <Footer/>
         </>
 
 

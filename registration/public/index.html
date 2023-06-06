@@ -15,6 +15,13 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="http://13.126.253.70/grievance/assets/front_css/theme.css" rel="stylesheet">
+	<link href="http://13.126.253.70/grievance/assets/front_css/font-awesome.min.css" rel="stylesheet">
+ 
+    <link href="http://13.126.253.70/grievance/assets/front_css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="http://13.126.253.70/grievance/assets/imgs/favi-icon.png" />
+	<link rel="icon" type="image/png" href="http://13.126.253.70/grievance/assets/imgs/favi-icon.png" />
+  
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -42,8 +49,116 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $('#username').on('input', function() 
+         {
+           validateUsername();
+         });
+     
+       $('#password').on('input', function() 
+         {
+           validatePassword();
+         });
+     
+         function validateUsername()
+         {
+         var format = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+     
+           //var format = /^[A-Za-z0-9 ]+$/;
+           var value = $("#username").val();
+           var error ="";
+           if(value.length<1)
+           {
+             error ="Email can't be empty.";
+           }
+           else if (!(format.test(value)))
+           {
+             error ="Invalid Email.";        
+           }
+           $("#username_validation").html(error);
+           $("#username").focus();
+           
+           if(error.length>0) return false;
+           return true;
+         }
+     
+       function validatePassword()
+         {
+           var value = $("#password").val();
+           var error ="";
+           if(value.length<4)
+           {
+             error ="Password must be 4 charecter long";
+           }
+           $("#password_validation").html(error);
+           $("#password").focus();
+           
+           if(error.length>0) return false;
+           return true;
+         }
+     
+       function validationsPass()
+         {
+           return validateUsername()  &&validatePassword();
+         }
+     
+         function doSubmit()
+         {
+             if (validationsPass()) 
+             {
+               return true;
+             }
+             else
+             {
+               return false;
+             }
+         }
+     </script>
+         <script src="http://13.126.253.70/grievance/assets/js/jquery.js"></script>
+
+         <script src="http://13.126.253.70/grievance/assets/js/bootstrap.min.js"></script>
+         <script>
+          $('.carousel').carousel({
+              interval: 5000 //changes the speed
+          })
+  
+          $(window).scroll(function() {
+              var scroll = $(window).scrollTop();
+  
+              if (scroll >= 100) {
+                  $(".navbar-inverse").addClass("active");
+              } else {
+                  $(".navbar-inverse").removeClass("active");
+              }
+          });
+  
+          $(".smooth-scroll").click(function() {
+              var href = $(this).attr('href');
+  
+  
+  
+              $('html, body').animate({
+                  scrollTop: $(href).offset().top - 50
+              }, 1000);
+  
+          });
+          $(document).on("click", "#scroll-top-icon", function() {
+              $("html, body").animate({
+                  scrollTop: 0
+              }, 1000);
+          });
+          $(window).scroll(function() {
+              var windowScroll = $(window).scrollTop();
+              var topScroll = 0;
+  
+              if (windowScroll > 700) {
+                  $("#scroll-top-icon").addClass('active');
+              } else {
+                  $("#scroll-top-icon").removeClass('active');
+              }
+          });
+  
+      </script>
     
-
-
   </body>
 </html>

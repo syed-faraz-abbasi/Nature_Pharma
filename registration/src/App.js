@@ -1,13 +1,14 @@
  
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import RegistrationForm from './components/registrationForm';
-import Header from './components/header';
+ 
 import About from './components/about';
 import Home from './components/home';
 import Event from'./components/events';
 import Contact from'./components/contact';
 import Result from'./components/result';
+import Admin from'./components/admin';
+
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
           <Route path="/contact" element={<Contact/>} />
           <Route path="/result" element={<Result/>} />
+          <Route path="/admin" element={<Admin/>}/>
 
 
         </Routes>
