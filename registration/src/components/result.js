@@ -7,8 +7,9 @@ import {
 
 
 } from 'reactstrap';
- 
-// import Header from './header';
+import Footer from './footer';
+
+import Header from './header';
 
 import 'react-slideshow-image/dist/styles.css';
  
@@ -26,6 +27,7 @@ const Home = ({ location }) => {
     return (
         
         <>
+        <Header/>
              <div className='slider slider-in'>
                 <Container>
                     <Row>
@@ -55,7 +57,7 @@ const Home = ({ location }) => {
                      </Row>
                 </Container>
             </div>
-
+              <Footer/>
         </>
 
 

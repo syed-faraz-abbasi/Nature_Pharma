@@ -1,22 +1,20 @@
 import React from 'react';
-import { Slide } from 'react-slideshow-image';
-import {
+ import {
     Col, Container,   Row,
 
 
 
 
 } from 'reactstrap';
+import Header from './header';
+import Footer from './footer';
  
-// import Header from './header';
-
+ 
 import 'react-slideshow-image/dist/styles.css';
  
 
-import person from '../components/images/person.jpg';
-
-import slidebg from '../components/images/2.png';
-
+ 
+ 
  
 
 
@@ -26,6 +24,7 @@ const Home = ({ location }) => {
     return (
         
         <>
+         <Header/>
                <div className='slider slider-in'>
                 <Container>
                     <Row>
@@ -57,7 +56,7 @@ const Home = ({ location }) => {
             </div>
             
 
-
+           <Footer/>
         </>
 
 
