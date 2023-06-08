@@ -3,7 +3,9 @@ import React from 'react';
 
 
 
- 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLock,faPhone,faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -22,7 +24,7 @@ const Admin = ({ location }) => {
                             <div className="login-left">
                                 <div className="logo">
                                     <a href="http://13.126.253.70/grievance/"><img src="http://13.126.253.70/grievance/assets/imgs/logo22.png" alt="logo" /></a>
-                                    <h3>Grievance Redressal Online Portal </h3>
+                                    <h3>Nature Pharma </h3>
                                 </div>
 
                                 <ul className="login-num">
@@ -43,8 +45,8 @@ const Admin = ({ location }) => {
                                 <div className="contact">
                                     <h5>Get more information contact us at</h5>
                                     <div className="clearfix"></div>
-                                    <a href="tel:0000-000000<"><i className="fa fa-phone-square" aria-hidden="true"></i> 0000-000000</a>
-                                    <a href="mailto:grievance@sharda.ac.in"><i className="fa fa-envelope" aria-hidden="true"></i> grievance@sharda.ac.in </a>
+                                    <a href="tel:0000-000000<">  <FontAwesomeIcon icon={faPhone} /> 0000-000000</a>
+                                    <a href="mailto:grievance@sharda.ac.in"><FontAwesomeIcon icon={faEnvelope} /> grievance@sharda.ac.in </a>
                                 </div>
                             </div>
                             <div className="login-right">
@@ -64,24 +66,19 @@ const Admin = ({ location }) => {
                                         <div className="login-sec">
 
                                             <div className="login-group">
-                                                <input className="span12" type="text" id="inputEmail" name="username" placeholder="Username" required />
+                                                <input  type="text" id="inputEmail" name="username" placeholder="Username" required />
 
                                             </div>
                                             <div className="login-group">
-                                                <input className="span12" type="password" id="inputPassword" name="password" placeholder="Password" required />
+                                                <input  type="password" id="inputPassword" name="password" placeholder="Password" required />
 
                                             </div>
 
 
                                             <div className="clearfix"></div>
-                                            <button className="button1" onclick="return doSubmit();" name="submit" type="submit" value="Submit"><i className="fa fa-lock"></i> SIGN IN</button>
+                                            <button className="button1 button3" onclick="return doSubmit();" name="submit" type="submit" value="Submit"><FontAwesomeIcon icon={faLock} /> SIGN IN</button>
                                             <div className="clearfix"></div>
-                                            <p className="registration1">
-                                                <a href="http://13.126.253.70/grievance/adminlogin/forgotpassword"> Forgot Password?</a>
-                                            </p>
-                                            <p className="registration2">
-                                                <a href="http://13.126.253.70/grievance/userlogin"> User Login </a>
-                                            </p>
+                                            
 
                                         </div>
                                     </form>

@@ -159,6 +159,29 @@
           });
   
       </script>
+      <script>
+        $(".menu-toggle1").click(function(){
+          $("#togglePages1").toggle();
+        });
+        $(".menu-toggle2").click(function(){
+          $("#togglePages2").toggle();
+        });
+        $(".menu-toggle3").click(function(){
+          $("#togglePages3").toggle();
+        });
+        $(".menu-toggle4").click(function(){
+          $("#togglePages4").toggle();
+        });
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+        if ($(window).width() < 767) {
+                $('.sidebar-toggle-box').click( function(){
+            $('.sidebar').slideToggle();
+            });
+        }
+        });
+        </script>
     
   </body>
 </html>

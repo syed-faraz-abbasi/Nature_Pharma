@@ -8,6 +8,7 @@ import Event from'./components/events';
 import Contact from'./components/contact';
 import Result from'./components/result';
 import Admin from'./components/admin';
+import Dashboard from './components/dashboard';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/result" element={<Result/>} />
           <Route path="/admin" element={<Admin/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
 
 
         </Routes>
