@@ -1,10 +1,11 @@
 import React from 'react';
  
 
+import { faLock,faPhone,faEnvelope  } from "react-icons/fa";
 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLock,faPhone,faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLock,faPhone,faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -45,8 +46,8 @@ const Admin = ({ location }) => {
                                 <div className="contact">
                                     <h5>Get more information contact us at</h5>
                                     <div className="clearfix"></div>
-                                    <a href="tel:0000-000000<">  <FontAwesomeIcon icon={faPhone} /> 0000-000000</a>
-                                    <a href="mailto:grievance@sharda.ac.in"><FontAwesomeIcon icon={faEnvelope} /> grievance@sharda.ac.in </a>
+                                    <a href="tel:0000-000000<">  <faPhone /> 0000-000000</a>
+                                    <a href="mailto:grievance@sharda.ac.in"><faEnvelope /> grievance@sharda.ac.in </a>
                                 </div>
                             </div>
                             <div className="login-right">
@@ -76,7 +77,7 @@ const Admin = ({ location }) => {
 
 
                                             <div className="clearfix"></div>
-                                            <button className="button1 button3" onclick="return doSubmit();" name="submit" type="submit" value="Submit"><FontAwesomeIcon icon={faLock} /> SIGN IN</button>
+                                            <button className="button1 button3" onclick="return doSubmit();" name="submit" type="submit" value="Submit"><faLock /> SIGN IN</button>
                                             <div className="clearfix"></div>
                                             
 

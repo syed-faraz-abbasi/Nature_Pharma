@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .dashpage{
     overflow: hidden;
     .dashboard{
@@ -15,6 +16,17 @@
         }
        }
        .dash_content {
+=======
+.dashboard{
+    background: url(../images/1.jpg);
+    width: 20%;
+    height: 100vh;
+    background-size: cover;
+   .dash{
+    padding: 30px 30px 0 30px;
+    position: relative;
+    img{
+>>>>>>> 2e41f0fa70a350a28fa4edb3b17eba9cfad8854f
         width: 100%;
         z-index: 1;
         position: relative;
