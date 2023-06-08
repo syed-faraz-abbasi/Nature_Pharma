@@ -182,6 +182,228 @@
         }
         });
         </script>
+      <script type="text/javascript">
+        window.onload = function () {
+         var chart = new CanvasJS.Chart("chartContainer", {
+        theme: "light2", // "light1", "light2", "dark1", "dark2"
+        exportEnabled: true,
+        animationEnabled: true,
+        title: {
+          text: "Over All Grievances"
+        },
+        data: [{
+          type: "pie",
+          startAngle: 25,
+          dataPoints: [
+            { y: 4, label: "New" },
+            { y: 0, label: "Inprogress" },
+            { y: 153, label: "Closed" }
+          ]
+        }]
+      });
+      chart.render();
+      
+         var chart = new CanvasJS.Chart("circleChartContainer", {
+        theme: "light2", // "light1", "light2", "dark1", "dark2"
+        exportEnabled: true,
+        animationEnabled: true,
+        title: {
+          text: "Jun 2023 Stats"
+        },
+        data: [{
+          type: "pie",
+          startAngle: 25,
+          dataPoints: [
+            { y: 0, label: "New" },
+            { y: 0, label: "Inprogress" },
+            { y: 4, label: "Closed" }
+          ]
+        }]
+      });
+      chart.render();
+      
+        // School Wise Chart
+        var chart = new CanvasJS.Chart("chartSchoolContainer",
+        {
+        theme: "light2", // "light1", "light2", "dark1", "dark2"
+        exportEnabled: true,
+        animationEnabled: true,
+        title: {
+          text: "School Wise Grievances"
+        },
+          axisY: {
+            title: "Count",
+            interlacedColor: "Azure",
+            interval: 100,
+            tickColor: "navy",
+            gridColor: "navy",
+            tickLength: 10
+          },
+          data: [
+            { 
+              showInLegend: true,           
+              legendText: "New Grievances",
+          axisYType: "secondary",
+              dataPoints: [
+          {label: "SET", y: 1},
+              {label: "SBS", y: 1},
+              {label: "SAP", y: 00},
+              {label: "SMFE", y: 0},
+              {label: "SOL", y: 0},
+              {label: "SHSS", y: 0},
+              {label: "SDS", y: 0},
+              {label: "SAHS", y: 0},
+              {label: "SMS&R", y: 0},
+              {label: "SBSR", y: 0},
+              {label: "SNS&R", y: 0},
+              {label: "SOP", y: 0},
+              {label: "OTH", y: 2}      
+              ]
+            },
+            {        
+          showInLegend: true, 
+          legendText: "Inprogress",
+          axisYType: "secondary",
+          dataPoints: [
+             {label: "SET", y: 0},
+              {label: "SBS", y: 0},
+              {label: "SAP", y: 00},
+              {label: "SMFE", y: 0},
+              {label: "SOL", y: 0},
+              {label: "SHSS", y: 0},
+              {label: "SDS", y: 0},
+              {label: "SAHS", y: 0},
+              {label: "SMS&R", y: 0},
+              {label: "SBSR", y: 0},
+              {label: "SNS&R", y: 0},
+              {label: "SOP", y: 0},
+              {label: "OTH", y: 0}  
+          ]
+            },
+            {        
+          showInLegend: true, 
+          legendText: "Closed",
+          axisYType: "secondary",
+          dataPoints: [
+          {label: "SET", y: 53},
+              {label: "SBS", y: 12},
+              {label: "SAP", y: 00},
+              {label: "SMFE", y: 6},
+              {label: "SOL", y: 5},
+              {label: "SHSS", y: 19},
+              {label: "SDS", y: 1},
+              {label: "SAHS", y: 12},
+              {label: "SMS&R", y: 4},
+              {label: "SBSR", y: 5},
+              {label: "SNS&R", y: 1},
+              {label: "SOP", y: 0},
+              {label: "OTH", y: 33}  
+              ]
+            }
+      
+            ]
+        });
+      
+        chart.render();
+        
+      //   $("#selectgrievances").change(function(){
+      // 	  this.form.submit();
+      //   });
+      
+       
+      
+       }
+      
+       $(document).ready(function() {
+                $("input[name$='academic1']").click(function() {
+                  var test = $(this).val();
+              
+                  $("div.first-con").hide();
+                  $("#academic1" + test).show();
+                });
+                $("input[name$='idw']").click(function() {
+                  var test = $(this).val();
+              
+                  $("div.first-con1").hide();
+                  $("#idw" + test).show();
+                });
+                $("input[name$='catw']").click(function() {
+                  var test = $(this).val();
+              
+                  $("div.first-con2").hide();
+                  $("#catw" + test).show();
+                });
+                $("input[name$='allg']").click(function() {
+                  var test = $(this).val();
+              
+                  $("div.first-con3").hide();
+                  $("#allg" + test).show();
+                });
+      
+              });
+      
+              function validatedate(){
+                var grievance_from = $('#grievance_from').val();
+                var grievance_to = $('#grievance_to').val();
+                      if(grievance_from ==''){
+                alert("Date From must not be empty");
+                $('#grievance_to').val('');
+              }
+              if(grievance_to < grievance_from){
+                alert("Date To must be greater than or equal to Date From");
+                $('#grievance_to').val('');
+              }
+              }
+      
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+        document.getElementById("exportgrievanceform").reset();
+        $('#exportgrievances').attr("disabled", true);
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        document.getElementById("exportgrievanceform").reset();
+          $('#exportgrievances').attr("disabled", true);
+        }
+      }
+      
+      $(document).ready(function() {
+        $('#exportgrievances').prop('disabled', true);
+           $('#selectgrievances').change(function() {
+              if($(this).val() != '') {
+                 $('#exportgrievances').prop('disabled', false);
+              }else { $('#exportgrievances').prop('disabled', true); }
+           });
+      });
+      
+      </script>
+      <script src="http://13.126.253.70/grievance/assets/js/canvasjs.js"></script>
+      <script>
+        $('#myTab a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+        </script>
+          <script src="http://13.126.253.70/grievance/assets/js/popper.js"></script>
+          <script src="http://13.126.253.70/grievance/assets/js/main.js"></script>  
     
   </body>
 </html>
