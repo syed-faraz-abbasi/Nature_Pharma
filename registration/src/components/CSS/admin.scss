@@ -2,8 +2,7 @@
     display: flex;
     overflow: hidden;
     #login-page{
-        height: 100vh;
-        
+        height: 100vh; 
     }
     .span{
             color: red;
@@ -14,9 +13,9 @@
         .login-left {
             width: 30%;
             padding: 40px;
-            height: 113vh;
+            height: 100vh;
             
-           background-image: url(../images/banner-bg.jpeg);
+           background-image: url(../images/1.jpg);
            background-size: cover;
            position: relative;
             &:before {
