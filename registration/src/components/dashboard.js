@@ -11,7 +11,7 @@ const Admin = ({ location }) => {
         <>
             <div className='dashpage'>
                 <Row>
-                    <Col md={3}>
+                    <Col md={2}>
                         <div className="dashboard">
 
                             <div className="dash">
@@ -51,7 +51,7 @@ const Admin = ({ location }) => {
                             </div>
                         </div>
                     </Col>
-                    <Col md={9}>
+                    <Col md={10}>
                         <div className='head'>
                             <div className="headernew">
                                 <Row>
