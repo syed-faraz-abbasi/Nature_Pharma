@@ -1,65 +1,67 @@
 import React from 'react';
 
-import { Col, Row, Container } from 'react-bootstrap'
+import { Row, Container } from 'react-bootstrap'
 import logo22 from '../components/images/logo3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDashboard, faList, faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+
 const Admin = ({ location }) => {
 
     return (
         <>
-            <div className='dashpage'>
-                <Row>
-                    <Col md={2}>
-                        <div className="dashboard">
+            <div className='wrapper d-flex align-items-stretch'>
+                <div id='sidebar'>
+                    <div className="dashboard">
 
-                            <div className="dash">
-                                <img src={logo22} alt="img" />
-                            </div>
-                            <div className="dash_content">
-                                <ul >
-                                    <li>
+<div className="dash">
+    <img src={logo22} alt="img" />
+</div>
+<div className="dash_content">
+    <ul >
+        <li>
 
-                                        <FontAwesomeIcon icon={faDashboard} className='fa' />
+            <FontAwesomeIcon icon={faDashboard} className='fa' />
 
-                                        Dashboard
+            Dashboard
 
-                                    </li>
+        </li>
 
-                                    <li>
-                                        <Link to="/"> </Link>
-                                        <FontAwesomeIcon icon={faUser} className='fa' />
-                                        Manage users
+        <li>
+            <Link to="/"> </Link>
+            <FontAwesomeIcon icon={faUser} className='fa' />
+            Manage users
 
-                                    </li>
-                                    <li> Account Setting
-
-
-                                    </li>
+        </li>
+        <li> Account Setting
 
 
+        </li>
 
-                                    <li>
 
-                                        <FontAwesomeIcon icon={faSignOutAlt} className='fa' />
-                                        Logout
 
-                                    </li>
-                                </ul>
+        <li>
 
-                            </div>
-                        </div>
-                    </Col>
-                    <Col md={10}>
-                        <div className='head'>
-                            <div className="headernew">
+            <FontAwesomeIcon icon={faSignOutAlt} className='fa' />
+            Logout
+
+        </li>
+    </ul>
+
+</div>
+                    </div>
+                </div>
+                <div id='content'>
+                    
+                        <div className="headernew">
                                 <Row>
                                     <h5><FontAwesomeIcon icon={faList} className='faa' />Nature Pharma</h5>
                                 </Row>
 
-                            </div>
-                            <div className="top-dash-sec white-box">
+                        </div>
+                    
+                    <div className='main-content'>
+                        <div className="top-dash-sec white-box">
                                 <Container>
                                     <div className="row">
                                         <div className="col-md-9">
@@ -77,15 +79,10 @@ const Admin = ({ location }) => {
                                         </div>
                                     </div>
                                 </Container>
-                            </div>
-                        </div>
-
-
-                    </Col>
-                </Row>
-
+                                </div>
+                    </div>
+                </div>
             </div>
-
         </>
     );
 };
