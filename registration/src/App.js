@@ -9,6 +9,8 @@ import Contact from'./components/contact';
 import Result from'./components/result';
 import Admin from'./components/admin';
 import Dashboard from './components/dashboard';
+import Manage from './components/manage';
+
 
 
 
@@ -25,6 +27,8 @@ function App() {
           <Route path="/result" element={<Result/>} />
           <Route path="/admin" element={<Admin/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/manage" element={<Manage/>}/>
+
 
 
         </Routes>

@@ -1,7 +1,6 @@
 import React from 'react';
  
-import { Link } from 'react-router-dom';
-// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+ // import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import {
     Col, Container, Row, 
  
@@ -21,8 +20,8 @@ function Header() {
     	<Row>
         <Col md={3}>
                   <div className="logo">
-                      <a href="#">
-                          <img src={userImg} className="logo-w" />
+                      <a href="/">
+                          <img src={userImg} className="logo-w"  alt='iii'/>
                        </a> 
                   </div>
         </Col>
