@@ -21,32 +21,21 @@ const Manage = ({ location }) => {
                             <div className="dash_content">
                                 <ul >
                                     <li>
-
+                                        <Link to="/dashboard" className='lk'>
                                         <FontAwesomeIcon icon={faDashboard} className='fa' />
 
-                                        Dashboard
+                                        Dashboard</Link>
 
                                     </li>
 
                                     <li>
-                                        <Link to="/"> </Link>
+                                        <Link to="/" className='lk'> 
                                         <FontAwesomeIcon icon={faUser} className='fa' />
-                                        Manage users
+                                        Manage users</Link>
 
                                     </li>
-                                    <li> Account Setting
+                                    
 
-
-                                    </li>
-
-
-
-                                    <li>
-
-                                        <FontAwesomeIcon icon={faSignOutAlt} className='fa' />
-                                        Logout
-
-                                    </li>
                                 </ul>
 
                             </div>
@@ -89,7 +78,7 @@ const Manage = ({ location }) => {
                                                     <td>8920976831</td>
                                                     <td>2019-09-24 12:44:37</td>
                                                     <td>
-                                                        <a className="view-btn" href="http://example.com" title="View Details">
+                                                        <a className="view-btn" to="http://example.com" title="View Details">
                                                             <FontAwesomeIcon icon={faEye} /> 
                                                         </a>
                                                     </td>
@@ -101,7 +90,7 @@ const Manage = ({ location }) => {
                                                     <td>8920976831</td>
                                                     <td>2019-10-16 12:12:59</td>
                                                     <td>
-                                                        <a className="view-btn" href="http://example.com" title="View Details">
+                                                        <a className="view-btn" to="http://example.com" title="View Details">
                                                         <FontAwesomeIcon icon={faEye} />                                                        </a>
                                                     </td>
                                                 </tr>
@@ -112,7 +101,7 @@ const Manage = ({ location }) => {
                                                     <td>8920976831</td>
                                                     <td>2019-10-17 02:42:13</td>
                                                     <td>
-                                                        <a className="view-btn" href="http://example.com" title="View Details">
+                                                        <a className="view-btn" to="http://example.com" title="View Details">
                                                             <FontAwesomeIcon icon={faEye} /> 
                                                         </a>
                                                     </td>
@@ -124,7 +113,7 @@ const Manage = ({ location }) => {
                                                     <td>9958136534</td>
                                                     <td>2019-10-17 03:26:32</td>
                                                     <td>
-                                                        <a className="view-btn" href="http://example.com" title="View Details">
+                                                        <a className="view-btn" to="http://example.com" title="View Details">
                                                             <FontAwesomeIcon icon={faEye} /> 
                                                         </a>
                                                     </td>

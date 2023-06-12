@@ -10,6 +10,7 @@ import {
  } from 'reactstrap';
   
  import userImg from '../components/images/Nature.png';
+import { Link } from 'react-router-dom';
  
 function Header() {
    
@@ -20,9 +21,9 @@ function Header() {
     	<Row>
         <Col md={3}>
                   <div className="logo">
-                      <a href="/">
+                      <Link to="/">
                           <img src={userImg} className="logo-w"  alt='iii'/>
-                       </a> 
+                       </Link> 
                   </div>
         </Col>
               
@@ -37,11 +38,11 @@ function Header() {
                         </button>
                         <div className="collapse navbar-collapse  " id="navbarNav">
                           <List className="navbar-nav">
-                                  <li className="active"><NavLink href="/">Home</NavLink></li>
-                                  <li><NavLink href="/about">About</NavLink></li>  
-                                  <li><NavLink href="/events"> Events </NavLink></li>  
-                                  <li><NavLink href="/result"> Result </NavLink></li>
-                                  <li><NavLink href="/contact"> Contact Us </NavLink></li>
+                                  <li className="active"><Link to="/">Home</Link></li>
+                                  <li><Link to="/about">About</Link></li>  
+                                  <li><Link to="/events"> Events </Link></li>  
+                                  <li><Link to="/result"> Result </Link></li>
+                                  <li><Link to="/contact"> Contact Us </Link></li>
                               
                           </List>
 
@@ -52,7 +53,7 @@ function Header() {
       
         <Col md={3}>
           <div className="header-contant">
-            <NavLink href="#" className="button1">Apply Now </NavLink> 
+            <Link to="#" className="button1">Apply Now </Link> 
           </div>
         </Col>
               

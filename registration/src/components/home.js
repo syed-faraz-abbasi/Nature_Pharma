@@ -111,7 +111,7 @@ const Home = ({ location }) => {
                             <h4>Talk to Our
                             <strong>Pharmacist</strong>
                             </h4>
-                            <NavLink className='button1' href="#">View Details</NavLink>
+                            <NavLink className='button1' to="#">View Details</NavLink>
                             </div>
                         </Col>
                     </Row>
@@ -130,7 +130,7 @@ const Home = ({ location }) => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id dui sed nulla blandit blandit eu et leo. Nunc auctor volutpat libero in interdum. Maecenas quis enim lorem. Donec in felis lorem. Proin sit amet enim ante. Vivamus mollis pharetra elit, non luctus risus aliquam id. Phasellus a imperdiet enim. Morbi varius mauris non leo aliquam eleifend. Nullam at pulvinar eros. Proin ac posuere dui. Cras feugiat egestas libero, et volutpat lorem tincidunt eget. Morbi luctus, mi in congue venenatis, ex dolor ullamcorper lectus, at congue felis ipsum nec dui.
 <br /> <br /> 
 Curabitur nec nisl in sem scelerisque blandit id nec diam. Suspendisse placerat pellentesque mauris sed consectetur. Nullam ut justo porta, porttitor orci id, pulvinar tortor. Sed in orci vulputate, egestas enim quis, convallis libero. Praesent ultrices enim sit amet porta tempor. Sed id mauris eros. In hac habitasse platea dictumst. Curabitur fringilla dictum scelerisque.</p>
-                                <NavLink className='button1' href="#">Read More </NavLink>
+                                <NavLink className='button1' to="#">Read More </NavLink>
                             </div>
                         </Col>
 
@@ -155,7 +155,7 @@ Curabitur nec nisl in sem scelerisque blandit id nec diam. Suspendisse placerat 
                                 <div className="contant">
                                     <h4>Pharmacy </h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                    <NavLink href='#' className='button1'>Read More</NavLink>
+                                    <NavLink to='#' className='button1'>Read More</NavLink>
                                 </div>
                             </div>
                          </Col>
@@ -167,7 +167,7 @@ Curabitur nec nisl in sem scelerisque blandit id nec diam. Suspendisse placerat 
                                 <div className="contant">
                                     <h4>Pharmacy </h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                    <NavLink href='#' className='button1'>Read More</NavLink>
+                                    <NavLink to='#' className='button1'>Read More</NavLink>
                                 </div>
                             </div>
                          </Col>
@@ -179,7 +179,7 @@ Curabitur nec nisl in sem scelerisque blandit id nec diam. Suspendisse placerat 
                                 <div className="contant">
                                     <h4>Pharmacy </h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                    <NavLink href='#' className='button1'>Read More</NavLink>
+                                    <NavLink to='#' className='button1'>Read More</NavLink>
                                 </div>
                             </div>
                          </Col>
@@ -191,7 +191,7 @@ Curabitur nec nisl in sem scelerisque blandit id nec diam. Suspendisse placerat 
                                 <div className="contant">
                                     <h4>Pharmacy </h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                    <NavLink href='#' className='button1'>Read More</NavLink>
+                                    <NavLink to='#' className='button1'>Read More</NavLink>
                                 </div>
                             </div>
                          </Col>

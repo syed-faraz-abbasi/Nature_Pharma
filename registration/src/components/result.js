@@ -1,6 +1,5 @@
 import React from 'react';
-import { Slide } from 'react-slideshow-image';
-import {
+ import {
     Col, Container, Row,
 
 
@@ -14,10 +13,8 @@ import Header from './header';
 import 'react-slideshow-image/dist/styles.css';
  
 
-import person from '../components/images/person.jpg';
-
-import slidebg from '../components/images/2.png';
-
+ 
+ 
  
 
 

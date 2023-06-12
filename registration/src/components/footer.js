@@ -2,8 +2,7 @@ import React from 'react';
  
  
 
-// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import {
+ import {
      Col, Container, Row, List, NavLink 
  } from 'reactstrap';
   
@@ -11,10 +10,9 @@ import {
  import call_icon from '../components/images/call_icon.png';
  import mail_icon from '../components/images/mail_icon.png';
  import location_icon from '../components/images/location_icon.png';
- import mail from '../components/images/mail.png';
+  
  
-import logo21 from '../components/images/logo21.png';
-
+ 
 
 import { FaFacebookF,FaInstagram,FaLinkedinIn,FaYoutube } from "react-icons/fa";
  
@@ -36,7 +34,7 @@ function Footer() {
 
       <Col md={4}>
          <div className="contantinfo">
-         <NavLink href="#" className="button2">Apply Now</NavLink>
+         <NavLink to="/" className="button1 button2">Apply Now </NavLink> 
          </div>
       </Col>
     </Row>
@@ -50,8 +48,8 @@ function Footer() {
                   </div>
                   <div className="text">
                      <span>Email Us</span>
-                     <a href="mailto:example@gmail.com">indo@sharda.ac.in</a>
-                     <a href="mailto:example@gmail.com">contanct@sharda.ac.in</a>
+                     <NavLink to="mailto:example@gmail.com">indo@sharda.ac.in</NavLink>
+                     <NavLink to="mailto:example@gmail.com">contanct@sharda.ac.in</NavLink>
                   </div>
                 </li>
                 <li>
@@ -60,8 +58,8 @@ function Footer() {
                   </div>
                   <div className="text">
                     <span>Call Us</span>
-                    <a href="tel:+9971058458">+000 000 0000</a>
-                     <a href="tel:+9971058458">+000 000 0000</a>  
+                    <a to="tel:+9971058458">+000 000 0000</a>
+                     <a to="tel:+9971058458">+000 000 0000</a>  
                   </div>
                 </li>
                  
@@ -100,10 +98,10 @@ function Footer() {
       <Col md={4}>
         <div className="footer-social">
           <List>
-            <li><NavLink href="#" target="_blank"><FaFacebookF /></NavLink></li>
-            <li><NavLink href="#" target="_blank"><FaInstagram /></NavLink></li>
-            <li><NavLink href="#" target="_blank"><FaLinkedinIn /></NavLink></li>
-            <li><NavLink href="#" target="_blank"><FaYoutube /></NavLink></li>
+            <li><NavLink to="#" target="_blank"><FaFacebookF /></NavLink></li>
+            <li><NavLink to="#" target="_blank"><FaInstagram /></NavLink></li>
+            <li><NavLink to="#" target="_blank"><FaLinkedinIn /></NavLink></li>
+            <li><NavLink to="#" target="_blank"><FaYoutube /></NavLink></li>
           </List>
         </div>
 

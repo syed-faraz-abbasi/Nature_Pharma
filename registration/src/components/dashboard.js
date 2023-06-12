@@ -20,31 +20,20 @@ const Admin = ({ location }) => {
                             <div className="dash_content">
                                 <ul >
                                     <li>
-
-                                    <FontAwesomeIcon icon={faDashboard} /> 
-                                        Dashboard
+                                     <Link to="/dashboard" className='lk'>
+                                    <FontAwesomeIcon icon={faDashboard} className='fa' /> 
+                                        Dashboard </Link>
 
                                     </li>
 
                                     <li>
-                                        <Link to="/"> </Link>
+                                        <Link to="/manage" className='lk'> 
                                         <FontAwesomeIcon icon={faUser} className='fa' />
-                                        Manage users
+                                        Manage users</Link>
 
                                     </li>
-                                    <li> Account Setting
+                                   
 
-
-                                    </li>
-
-
-
-                                    <li>
-
-                                        <FontAwesomeIcon icon={faSignOutAlt} className='fa' />
-                                        Logout
-
-                                    </li>
                                 </ul>
 
                             </div>
