@@ -29,7 +29,7 @@ const Admin = ({ location }) => {
                                     <li>
                                         <Link to="/manage" className='lk'> 
                                         <FontAwesomeIcon icon={faUser} className='fa' />
-                                        Manage users</Link>
+                                        Manage users new</Link>
 
                                     </li>
                                    
