@@ -3,7 +3,7 @@ import React from 'react';
 import { Col, Row, Container } from 'react-bootstrap'
 import logo22 from '../components/images/logo3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDashboard, faList, faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { faDashboard, faList, faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 const Admin = ({ location }) => {
 
@@ -29,7 +29,7 @@ const Admin = ({ location }) => {
                                     <li>
                                         <Link to="/manage" className='lk'> 
                                         <FontAwesomeIcon icon={faUser} className='fa' />
-                                        Manage users new</Link>
+                                        Manage users</Link>
 
                                     </li>
                                    

@@ -40,8 +40,10 @@ function Header() {
                           <List className="navbar-nav">
                                   <li className="active"><Link to="/">Home</Link></li>
                                   <li><Link to="/about">About</Link></li>  
-                                  <li><Link to="/events"> Events </Link></li>  
-                                  <li><Link to="/result"> Result </Link></li>
+                                  <li><Link to="/services"> Services </Link></li>  
+                                  <li><Link to="/medical"> Medical Supplies </Link></li>
+                                  <li><Link to="/resources"> Resouces </Link></li>
+
                                   <li><Link to="/contact"> Contact Us </Link></li>
                               
                           </List>

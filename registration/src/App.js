@@ -4,12 +4,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
  
 import About from './components/about';
   import Home from './components/home';
-import Event from'./components/events';
 import Contact from'./components/contact';
-import Result from'./components/result';
 import Admin from'./components/admin';
 import Dashboard from './components/dashboard';
 import Manage from './components/manage';
+import Resources from './components/resources';
+import Services from './components/services';
+import Medical from './components/medical';
+
+
 
 
 
@@ -21,13 +24,14 @@ function App() {
         <Routes>
         <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />
-          <Route path="/events" element={<Event/>} />
 
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/result" element={<Result/>} />
           <Route path="/admin" element={<Admin/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/manage" element={<Manage/>}/>
+          <Route path="/resources" element={<Resources/>}/>
+          <Route path ="/services" element={<Services/>}/>
+          <Route path ="/medical" element={<Medical/>}/>
 
 
 
