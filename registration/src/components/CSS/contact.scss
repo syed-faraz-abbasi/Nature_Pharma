@@ -1,6 +1,27 @@
-.main_area{
+#main_area{
+ 
    .template_form{
-    box-shadow: 0 2px 4px #d41919;
-    padding: 30px;
+     
+         box-shadow: 0 2px 4px #d41919;
+         padding: 30px;
+      #submitform{
+         
+        span{
+            color: #f30404;
+         }
+         .form_box{
+            margin: 25px 0 25px 0;
+            input{
+               width: 50%;
+              
+            }
+            textarea{
+               width: 50%;
+
+            }
+
+         }
+      }
+  
    }
 }
