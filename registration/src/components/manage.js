@@ -4,7 +4,7 @@ import React from 'react';
 import { Col, Row, Container} from 'react-bootstrap'
 import logo22 from '../components/images/logo3.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDashboard, faList, faUser, faSignOutAlt,faEye } from '@fortawesome/free-solid-svg-icons';
+import { faDashboard, faList, faUser, faPlus,faEye } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 const Manage = ({ location }) => {
 
@@ -55,7 +55,18 @@ const Manage = ({ location }) => {
                             
                             <div className="main-body">
                                 <div className="headings">
-                                    <h4>Manage Users</h4>
+                              
+                                    <Row>
+                                        <Col md={10}>
+                                        <h4>Manage Users</h4>
+                                        </Col>
+                                        <Col md={2}>
+                                        <div className="header-contant">
+                                            <Link to="#" className="button1">Add new <FontAwesomeIcon icon={faPlus}/> </Link>  
+                                        </div>
+                                        </Col>
+                                    </Row>
+                                   
                                 </div>
                                 <div className="white-box">
                                     <div className="scrolling-table">
